@@ -1,0 +1,185 @@
+/**
+ * DEVELOPER'S NOTES
+ * - tomato : #ff6347;
+ * - lighter tomato: #ff7960;
+ * - darker tomato: #b23620;
+ * - light green: #47ffb1;
+ * - dark green: #0eb26d;
+ *
+ *
+ */
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'montserratlight', sans-serif;
+    background-color: black;
+    display: flex;
+    flex-flow: column nowrap;
+    color: #bfbfbf;
+    justify-content: center;
+    margin: 30px 0px 0px 0px;
+}
+
+.content a{
+    color: tomato; 
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+
+.content a:hover {
+    color: #47ffb1;
+}
+
+/* Navigation Bar */
+nav.topnav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  border: 1px solid tomato;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+nav.topnav > a {
+  text-decoration: none;
+  padding: 10px;
+  color: #bfbfbf;
+  flex: 1 1 auto;
+  text-align: center;
+}
+nav.topnav > a:hover {
+  color: #47ffb1;
+}
+
+/* 'AP' Brand */
+.brand {
+    width: 150px;
+    height: 1.3em;
+    text-align: center;
+    font-size: 6em;
+    font-weight: bold; 
+    border-bottom: 1px dashed #3e3e3e;
+    color: #cccccc;
+    margin-left: 75px;
+    margin-top: 50px;
+}
+
+/* Homepage Banner */
+.banner {
+    display: flex;
+    width: 95%;
+    padding-top: 20px;
+    margin: 0 auto;
+    flex-flow: row wrap;
+}
+.banner img {
+    width: 500px;
+}
+.banner .left {
+    order: 1;
+    flex: 1 1 300px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+.banner .left .content {
+    padding-top: 150px;
+    flex: 0 1 auto;
+}
+.banner .left .content p {
+    vertical-align: bottom;
+    width: 350px;
+    color: #bfbfbf;
+}
+.banner .right {
+    order: 2;
+    flex: 0 1 500px;
+}
+@media screen and (max-width: 500px) {
+    .banner img {
+        width: 100%;
+    }
+    .banner .left .content > p {
+        width: 100%;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #111111;
+    border-top: 5px solid #ff6347;
+    width: 100%;
+    margin-top: 150px;
+    padding: 50px 50px 20px 50px;
+    display: flex;
+    flex-flow: row wrap;
+    letter-spacing: 1px;
+}
+footer .left {
+    order: 1;
+    flex: 1 1 300px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+footer .right {
+    order: 1;
+    flex: 1 1 300px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+footer .bottom {
+    order: 1;
+    width: 100%;
+    flex: 1 1 auto;
+    padding-top: 25px;
+    text-align: center;
+    color: #b23620;
+}
+nav.bottomnav {
+    padding-top: 15px;
+    padding-left: 25px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+nav.bottomnav > a {
+    padding: 10px 0px 10px 0px;
+    border-bottom: 1px dotted;
+    text-decoration: none;
+    color: #0eb26d;
+}
+nav.bottomnav > a:hover {
+    color: #ff7960;
+}
+
+footer .right p {
+    margin: 0px;
+    text-align: right;
+    padding-bottom: 0.8em;
+    line-height: 1.7em;
+    color: #0eb26d;
+}
+footer .right a {
+    text-decoration: none;
+    color: #0eb26d;
+    border-bottom: 1px dotted;
+}
+footer .right a:hover {
+    color: #ff7960;
+}
+footer .left > :nth-child(1), footer .right > :nth-child(1) {
+    font-weight: bold;
+    color: #47ffb1;
+}
