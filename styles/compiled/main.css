@@ -53,13 +53,13 @@ body {
     line-height: 1.5em;
     letter-spacing: 1px;
 }
-.content a {
+.content a, .main_section a {
     color: tomato; 
     text-decoration: none;
     border-bottom: 1px dotted;
 }
 
-.content a:hover {
+.content a:hover, .main_section a:hover {
     color: #47ffb1;
 }
 
@@ -378,9 +378,9 @@ h3 {
 }
 .box_title {
     border-bottom: 1px solid tomato;
-    -webkit-flex: 0 1 2em;
-        -ms-flex: 0 1 2em;
-            flex: 0 1 2em;
+    -webkit-flex: 0 0 2em;
+        -ms-flex: 0 0 2em;
+            flex: 0 0 2em;
 }
 .box_description {
     font-size: 0.9em;
@@ -406,7 +406,15 @@ h3 {
 .box:hover * {
     color: white;
 }
-
+.box_image {
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+}
+.box_image > img {
+    width: 72%;
+    height: auto;
+}
 /* Div Link */
 a.div_link {
     position: absolute;
