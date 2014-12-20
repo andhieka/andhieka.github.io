@@ -265,6 +265,7 @@ h3 {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+    align-items: center;
     text-decoration: none;
     position: relative;
 }
